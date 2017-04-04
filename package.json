@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.16.0",
+    "body-parser": "^1.17.1",
+    "cheerio": "^0.22.0",
+    "express": "^4.15.2",
+    "foreman": "^2.0.0",
+    "marked": "^0.3.6",
+    "mongoose": "^4.9.3",
+    "nodemon": "^1.11.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
@@ -14,5 +22,18 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "- [Trello Board for this project.](https://trello.com/b/hCk4IbUn/project-4)",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Philocoder93/mern-scraper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Philocoder93/mern-scraper/issues"
+  },
+  "homepage": "https://github.com/Philocoder93/mern-scraper#readme"
 }

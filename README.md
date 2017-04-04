@@ -24,3 +24,7 @@ node index.js
   + placeholder here
 
 - For further info see the planning-documentation directory.
+
+- Resources that I used when constructing this app:
+  + [This tutorial on building a MERN stack app was invaluable.](https://github.com/Philocoder93/mernCommentBox)
+  + 
