@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CommentBox from './CommentBox';
-import './index.css';
+import DataBox from './DataBox';
+import './style';
 
 ReactDOM.render(
-  <CommentBox />,
+  <DataBox
+    urls={['http://localhost:3001/scraper/crime','http://localhost:3001/scraper/crime','http://localhost:3001/scraper/crime']}
+    pollInterval={2000}
+  />,
   document.getElementById('root')
 );

@@ -9,15 +9,21 @@ class CommentForm extends Component {
     this.handleTextChange = this.handleTextChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
-  handleAuthorChange(){
+  handleAuthorChange(e){
     this.setState({author: e.target.value})
   }
-  handleTextChange(){
+  handleTextChange(e){
     this.setState({text: e.target.value})
   }
-  handleSubmit(){
+  handleSubmit(e){
     e.preventDefault
-    console.log(`${this.state.author} said "${this.state.text}"`)
+    let author = this.state.author.trim()
+    let text = this.state.text.trim()
+    if (!text || !author) {
+      return;
+    }
+    this.props.onCommentSubmit({author: author, text: text})
+    this.setState({author: '', text: ''})
   }
   render() {
     return(
@@ -38,7 +44,7 @@ class CommentForm extends Component {
         />
         <input
           type='submit'
-          style=
+          style={style.commentFormSubmit}
         />
       </form>
     )
